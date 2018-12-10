@@ -6,7 +6,7 @@ The project includes a web app that accepts any user-supplied image as input. If
 <img src="/data/snapshot.png" alt="screenshot"/>
 
 # Instructions
-0. Download the dog dataset (https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip and save it to folder /dogImages 
+0. Download the dog dataset (https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip and save it to folder data/dogImages 
 
 1. Run the following commands in the models directory to train model.
     - `python train.py`
