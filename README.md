@@ -6,19 +6,29 @@ The project includes a web app that accepts any user-supplied image as input. If
 <img src="/data/snapshot.png" alt="screenshot"/>
 
 # Instructions
-0. Download the dog dataset (https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip and save it to folder data/dogImages 
+1. Download the dog dataset (https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip and save it to folder "data/dogImages" 
 
-1. Run the following commands in the models directory to train model.
+2. Download the human dataset (https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip). Unzip and save it to folder "data/lfw"
+
+3. Donwload the bottleneck features for the dog dataset. Place it to folder "data/bottleneck_features".
+- VGG16: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz
+- VGG19: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG19Data.npz
+- Resnet50: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/ResNET50Data.npz
+
+
+1. Run the following commands in the directory  "models" to train model.
     - `python train.py`
 
-2. Run the following command in the app's directory to run your web app.
+2. Run the following command in the  directory "app' to run your web app.
     - `python run.py`
 
 3. Go to http://0.0.0.0:3001/
 
 # Important Files:
 
-models/train.py: The Machine Learning pipeline used to fit, tune, evaluate, and export the model. The trained model will be saved as "model_full.h5"
+Requirement.txt: List of Python packages required.
+
+models/train.py: The Machine Learning pipeline used to fit, tune, evaluate, and export the model. The trained model will be saved as "model_full.h5".
 
 app/templates/*.html: HTML templates for the web app.
 
