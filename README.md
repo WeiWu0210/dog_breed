@@ -26,7 +26,7 @@ The project includes a web app that accepts any user-supplied image as input. If
 
 # Important Files:
 
-Requirement.txt: List of Python packages required.
+Requirement.txt: List of Python packages required. Note Python 3.6.5 is used as Tensorflow does not support Pyhton3.7 yet as of the time of this project (12/2018).
 
 models/train.py: The Machine Learning pipeline used to fit, tune, evaluate, and export the model. The trained model will be saved as "model_full.h5".
 
